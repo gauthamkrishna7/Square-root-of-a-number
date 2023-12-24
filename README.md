@@ -16,16 +16,28 @@ To write a program to find the square root of a number.
 
 ## Program:
 ```
-/*
-Program to find the square root for the given number(newton's method) using function.
-Developed by: 
-RegisterNumber:  
-*/
+#Program to find the square root of the given number
+#Developed by: GAUTHAM KRISHNA S        
+#RegisterNumber: 23012450
+
+def square_root(n,l):
+    x = n
+    while True:
+        root = 0.5 *(x+(n/x))
+        if(abs(root-x)<l):
+            break
+        x = root
+    return root
+n = float(input())
+root = square_root(n,0.00001)
+if root-int(root)<0.005:
+    root = round(root,1)
+print("Square root of the number:",root)
 ```
 
 ## Output:
-![gcd of two number](gcd.png)
 
+<img width="1467" alt="Screenshot 2023-11-29 at 8 48 36 AM" src="https://github.com/gauthamkrishna-s/Square-root-of-a-number/assets/146015011/d1c86c06-749c-4e1a-9562-4e41398361da">
 
 ## Result:
 Thus the program to find the square root for the given number(newton's method) using function is written and verified using python programming.
